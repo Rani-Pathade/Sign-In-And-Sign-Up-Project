@@ -1,0 +1,10 @@
+doctype html
+html
+    head
+        style   
+            include styles/style.css
+        title WELCOME
+    body.index(bgColor="grey")
+        h2 dear #{session_user}, Welcome to profile page  
+        p to change the password 
+            a(href="/change_pwd") click here

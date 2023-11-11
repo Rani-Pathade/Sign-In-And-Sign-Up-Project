@@ -1,0 +1,16 @@
+doctype html
+html
+    head
+        style 
+            include styles/style.css
+        title= pageTitle
+    body.index(bgColor="grey")
+        div 
+            form.main(action="/signin" method="post")  
+                h1.heading Sign In
+                div
+                    input.input-field(name="username" placeholder="Username") 
+                div
+                    input.input-field(name="password" type="password" placeholder="Password")
+                div
+                    button.input-field(type="submit") Sign In   
